@@ -1,4 +1,3 @@
-
 let assert = {
   isTrue: function(assertionToCheck) {
     if (!assertionToCheck) {

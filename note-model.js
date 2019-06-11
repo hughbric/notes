@@ -1,14 +1,10 @@
 (function(exports) {
-  function Note() {
-    this._allNotes = [];
+  function Note(text) {
+    this._note = text;
   }
 
-  Note.prototype.add = function(note) {
-    this._allNotes.push(note);
-  };
-
   Note.prototype.view = function() {
-    return this._allNotes[0];
+    return this._note;
   };
   exports.Note = Note;
 })(this);
