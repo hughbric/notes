@@ -1,11 +1,8 @@
-function test() {
-  let note = new Note('hello'); 
+function newNote() {
+  let note = new Note(); 
+  note.add("Learn how to code");
 
-  console.log(note.text);
-  console.log(assert.isTrue(note.text));
-
-  assert.expect(note.text);
-  console.log(assert.toBeEqual('hello'));
+  assert.isTrue(note.view() === "Learn how to code");
 }
 
-test();
+newNote();
