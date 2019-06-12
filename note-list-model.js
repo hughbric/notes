@@ -5,7 +5,7 @@
 
   NoteList.prototype.addNote = function(text) {
     var note = new Note(text);
-    this.allNotes.push(note.view());
+    this.allNotes.push(note);
   };
 
   NoteList.prototype.viewNotes = function() {
