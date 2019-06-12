@@ -23,4 +23,12 @@ I can see the full text of an individual note on its own page.
 
 Clone the repository.  
 
-Open the `index.html` in the web browser.  
+Open the `index.html` with Live Server in the web browser.  
+
+OR
+
+To install server node_modules:  
+`cd root/of/your-project/`  
+`npm install http-server --save`  
+
+To run the server: `node node_modules/http-server/bin/http-server`  
