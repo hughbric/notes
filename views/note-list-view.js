@@ -3,13 +3,15 @@
    this.noteList = noteList;
   }
 
-  NoteListView.prototype.toHTML = function() {
+  NoteListView.prototype.displayNoteList = function() {
     var htmlString = "<ul>";
     this.noteList.viewNotes().forEach(function(note) {
       htmlString += `<li><div>${note.view()}</div></li>`;  
     });
     htmlString += "</ul>";
-    return htmlString;
+
+    var app = document.getElementById("app");
+    return app.innerHTML = htmlString;
   };
 
   exports.NoteListView = NoteListView;
