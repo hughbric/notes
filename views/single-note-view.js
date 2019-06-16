@@ -4,7 +4,7 @@
    }
  
    SingleNoteView.prototype.displayNote = function() {
-     htmlString = `<ul><li><div>${this.note.view()}</div></li></ul>`;
+     htmlString = `<ul><li><div>${this.note.getText()}</div></li></ul>`;
 
      var app = document.getElementById("note");
      return app.innerHTML = htmlString;
